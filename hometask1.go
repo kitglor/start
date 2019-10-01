@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"unicode"
 )
 
 func main() {
@@ -19,9 +18,9 @@ func main() {
 	var z string
 	fmt.Scanf("%s", &z)
 
-	fmt.Println(kalk(z))
+	fmt.Println(kalk(x, y, z))
 }
-func kalk(x float64, y float64, z string) {
+func kalk(x float64, y float64, z string) string {
 	{
 
 		switch z {
@@ -35,8 +34,8 @@ func kalk(x float64, y float64, z string) {
 			fmt.Println(x / y)
 		default:
 			fmt.Println("err")
-			return z
-		}
 
+		}
+		return z
 	}
 }
