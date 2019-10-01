@@ -12,30 +12,31 @@ func main() {
 	fmt.Scanf("%f", &x)
 
 	fmt.Print("Enter y: ")
-
 	var y float64
 	fmt.Scanf("%f", &y)
 
 	fmt.Print("Enter z: ")
-	var Z string
+	var z string
 	fmt.Scanf("%s", &z)
-	fmt.Println(Z)
 
+	fmt.Println(kalk(z))
 }
+func kalk(x float64, y float64, z string) {
+	{
 
-func calc() {
+		switch z {
+		case "*":
+			fmt.Println(x * y)
+		case "-":
+			fmt.Println(x - y)
+		case "+":
+			fmt.Println(x + y)
+		case "/":
+			fmt.Println(x / y)
+		default:
+			fmt.Println("err")
+			return z
+		}
 
-	switch z {
-	case "*":
-		fmt.Println(x * y)
-	case "-":
-		fmt.Println(x - y)
-	case "+":
-		fmt.Println(x + y)
-	case "/":
-		fmt.Println(x / y)
-	default:
-		fmt.Println("err")
 	}
-
 }
