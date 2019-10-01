@@ -19,16 +19,17 @@ func main() {
 	fmt.Println(z)
 
 	switch z {
-		case "*":
-			fmt.Println(x * y)
+	case "*":
+		fmt.Println(x * y)
 
-		case "-":
-			fmt.Println(x - y)
-		case "+":
-			fmt.Println(x + y)
-		case "/":
-			fmt.Println(x / y)
-		default:
-			fmt.Println("err")
+	case "-":
+		fmt.Println(x - y)
+	case "+":
+		fmt.Println(x + y)
+	case "/":
+		fmt.Println(x / y)
+	default:
+		fmt.Println("err")
 
-		}
+	}
+}
