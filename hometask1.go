@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode"
+)
 
 func main() {
 
@@ -14,14 +17,17 @@ func main() {
 	fmt.Scanf("%f", &y)
 
 	fmt.Print("Enter z: ")
-	var z string
+	var Z string
 	fmt.Scanf("%s", &z)
-	fmt.Println(z)
+	fmt.Println(Z)
+
+}
+
+func calc() {
 
 	switch z {
 	case "*":
 		fmt.Println(x * y)
-
 	case "-":
 		fmt.Println(x - y)
 	case "+":
@@ -30,6 +36,6 @@ func main() {
 		fmt.Println(x / y)
 	default:
 		fmt.Println("err")
-
 	}
+
 }
