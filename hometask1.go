@@ -33,7 +33,7 @@ func kalk(x float64, y float64, z string) float64 {
 		case "/":
 			return (x / y)
 		default:
-			fmt.Println("Еггоr")
+			return (0)
 
 		}
 	}
