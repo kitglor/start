@@ -20,22 +20,21 @@ func main() {
 
 	fmt.Println(kalk(x, y, z))
 }
-func kalk(x float64, y float64, z string) string {
+func kalk(x float64, y float64, z string) float64 {
 	{
 
 		switch z {
 		case "*":
-			fmt.Println(x * y)
+			return (x * y)
 		case "-":
-			fmt.Println(x - y)
+			return (x - y)
 		case "+":
-			fmt.Println(x + y)
+			return (x + y)
 		case "/":
-			fmt.Println(x / y)
+			return (x / y)
 		default:
-			fmt.Println("err")
+			fmt.Println("Еггоr")
 
 		}
-		return z
 	}
 }
